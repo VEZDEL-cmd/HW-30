@@ -1,0 +1,66 @@
+ .background {
+     width: 400x;
+     height: 400px;
+     margin: 50px 0 0 400px;
+ }
+
+ .decor-cube {
+     width: 100px;
+     height: 100px;
+     background-color: red;
+
+     animation: decor-cube 6s infinite;
+ }
+
+ @keyframes decor-cube {
+     0% {
+         background-color: red;
+     }
+
+     25% {
+         background-color: blue;
+         transform: translateY(300%);
+     }
+
+     50% {
+         background-color: green;
+         transform: translate(300%, 300%);
+     }
+
+     75% {
+         background-color: yellow;
+         transform: translateX(300%);
+     }
+
+     100% {
+         background-color: red;
+     }
+ }
+
+ .footer {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     padding: 20px;
+     text-align: center;
+     color: white;
+     background: linear-gradient(270deg, #ff00ff, #00ffff, #ff9900);
+     background-size: 600% 600%;
+     animation:   footer 8s ease infinite;
+ }
+
+
+ @keyframes  footer {
+     0% {
+         background-position: 0% 50%;
+     }
+
+     50% {
+         background-position: 100% 50%;
+     }
+
+     100% {
+         background-position: 0% 50%;
+     }
+ }
